@@ -19,7 +19,7 @@ const backendShortcuts = {
     developer: 'https://developer.na.gooddata.com'
 };
 
-const defaultBackend = backendShortcuts.stg;
+const defaultBackend = backendShortcuts.stg3;
 
 function SimplestProgressPlugin() {
     let lastPercent = -10;
