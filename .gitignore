@@ -45,3 +45,10 @@ test-storybook/
 
 /.testcaferc.json
 /examples/_screenshots
+/scripts
+/specs
+/stories
+/src 
+/docker
+/__mocks__
+/styles 
