@@ -5,10 +5,11 @@ import ExampleWithSource from '../components/utils/ExampleWithSource';
 
 import AttributeFilterExample from '../components/AttributeFilterExample';
 import AttributeElementsExample from '../components/AttributeElementsExample';
+import MeasureFilterExample from '../components/MeasureFilterExample';
 
 import AttributeFilterExampleSRC from '!raw-loader!../components/AttributeFilterExample'; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import AttributeElementsExampleSRC from '!raw-loader!../components/AttributeElementsExample'; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
-
+import MeasureFilterExampleSCR from '!raw-loader!../components/MeasureFilterExample';
 
 export const AttributeFilter = () => (
     <div>
@@ -25,6 +26,13 @@ export const AttributeFilter = () => (
             to handle what happens when the user clicks the Apply button.
         </p>
         <ExampleWithSource for={AttributeFilterExample} source={AttributeFilterExampleSRC} />
+
+        <hr className="separator" />
+
+        <h2>Measure Filter</h2>
+        <p>You can render Column chart with local filter inside measure.</p>
+
+        <ExampleWithSource for={MeasureFilterExample} source={MeasureFilterExampleSCR} />
 
         <hr className="separator" />
 
