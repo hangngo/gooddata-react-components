@@ -5,9 +5,11 @@ import ExampleWithSource from "../components/utils/ExampleWithSource";
 
 import AttributeFilterExample from "../components/AttributeFilterExample";
 import AttributeElementsExample from "../components/AttributeElementsExample";
+import MeasureFilterExample from "../components/MeasureFilterExample";
 
 import AttributeFilterExampleSRC from "!raw-loader!../components/AttributeFilterExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import AttributeElementsExampleSRC from "!raw-loader!../components/AttributeElementsExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
+import MeasureFilterExampleSRC from "!raw-loader!../components/MeasureFilterExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 
 export const AttributeFilter = () => (
     <div>
@@ -40,6 +42,8 @@ export const AttributeFilter = () => (
             paging, attribute values and a loadMore function.
         </p>
         <ExampleWithSource for={AttributeElementsExample} source={AttributeElementsExampleSRC} />
+        <hr className="separator" />
+        <ExampleWithSource for={MeasureFilterExample} source={MeasureFilterExampleSRC} />
     </div>
 );
 

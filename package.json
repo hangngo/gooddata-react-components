@@ -103,6 +103,7 @@
     "@gooddata/goodstrap": "60.3.2",
     "@gooddata/js-utils": "3.4.0",
     "@gooddata/numberjs": "^3.1.2",
+    "@gooddata/react-components": "7.0.0-pbenes-next-7-1-0-2019-05-13T08-18-02-759Z",
     "@gooddata/typings": "2.10.0",
     "@types/highcharts": "4.2.56",
     "ag-grid": "^18.0.1",
@@ -157,7 +158,7 @@
     "examples-testcafe": "testcafe chrome --assertion-timeout 60000 -S -s examples/_screenshots examples/test/**/**/*_test* --debug-on-fail",
     "examples-testcafe-live": "testcafe-live chrome --assertion-timeout 60000 examples/test/**/**/*_test*",
     "examples-testcafe-ci": "testcafe 'chrome:headless --no-sandbox' --assertion-timeout 60000 -S -s examples/_screenshots examples/test/**/**/*_test*",
-    "heroku-postbuild": "yarn examples-build developer"
+    "heroku-postbuild": "yarn examples-build stg3"
   },
   "typings": "dist/index.d.ts",
   "jest": {
