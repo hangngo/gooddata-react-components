@@ -60,6 +60,7 @@
     "formik": "^0.11.11",
     "history": "^4.7.2",
     "html-webpack-plugin": "2.30.1",
+    "husky": "^3.1.0",
     "identity-obj-proxy": "^3.0.0",
     "isomorphic-fetch": "2.2.1",
     "jest": "23.6.0",
@@ -153,6 +154,9 @@
     "examples-testcafe-live": "testcafe-live chrome --assertion-timeout 60000 examples/test/**/**/*_test*",
     "examples-testcafe-ci": "testcafe 'chrome:headless --no-sandbox' --assertion-timeout 60000 -S -s examples/_screenshots examples/test/**/**/*_test*",
     "heroku-postbuild": "yarn examples-build stg3"
+  },
+  "engines": {
+    "node": "^8.10.0"
   },
   "typings": "dist/index.d.ts",
   "jest": {
